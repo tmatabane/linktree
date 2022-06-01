@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/linktree/static/js/main.b73f8358.js",
+    "main.js": "/linktree/static/js/main.ad077002.js",
     "index.html": "/linktree/index.html",
-    "main.b73f8358.js.map": "/linktree/static/js/main.b73f8358.js.map"
+    "main.ad077002.js.map": "/linktree/static/js/main.ad077002.js.map"
   },
   "entrypoints": [
-    "static/js/main.b73f8358.js"
+    "static/js/main.ad077002.js"
   ]
 }
