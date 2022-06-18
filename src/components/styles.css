@@ -1,0 +1,23 @@
+/* Selector */
+body {
+    background-color: #fcd16d;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2em;
+    color: blue;
+    margin: 20px 0 30px;
+}
+
+header {
+    background-color: #f5ba13;
+    margin: auto -16px;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    color: #fff;
+    font-weight: 200;
+}
