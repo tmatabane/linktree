@@ -2,6 +2,8 @@ import React from "react";
 import links from "../links";
 import Cards from "./Cards";
 import Header from "./Header";
+import Footer from "./Footer";
+
 
 function App() {
     return (
@@ -23,6 +25,8 @@ function App() {
             name = {links[3].name}
             url = {links[3].url}
             />
+
+        <Footer />
         </div>
     );
 }

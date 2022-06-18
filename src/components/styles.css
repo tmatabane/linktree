@@ -1,13 +1,19 @@
-/* Selector */
+/******** TAG SELECTORS ********/
 body {
     background-color: #fcd16d;
 }
 
-.heading {
+
+footer {
+    position: absolute;
     text-align: center;
-    font-size: 2em;
-    color: blue;
-    margin: 20px 0 30px;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+footer p {
+    color: #ccc;
 }
 
 header {
@@ -21,3 +27,12 @@ header h1 {
     color: #fff;
     font-weight: 200;
 }
+
+/*********** CLASS SELECTORS **********/
+.heading {
+    text-align: center;
+    font-size: 2em;
+    color: blue;
+    margin: 20px 0 30px;
+}
+
