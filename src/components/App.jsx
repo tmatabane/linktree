@@ -1,10 +1,12 @@
 import React from "react";
 import links from "../links";
 import Cards from "./Cards";
+import Header from "./Header";
 
 function App() {
     return (
         <div>
+        <Header />
             <Cards
             name = {links[0].name}
             url = {links[0].url}

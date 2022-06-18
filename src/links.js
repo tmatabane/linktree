@@ -19,7 +19,7 @@ const links = [
 
 {
     name: "GitHub",
-    url:"https://github.com/tmatabane/linktree"
+    url:"https://github.com/tmatabane/linktree/tree/master"
 }
 
 ];
