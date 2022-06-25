@@ -3,11 +3,11 @@ import React from "react";
 function Cards(props) {
     return(
         
-        <a href={props.url}>
+        <a href={props.url} target="_blank" rel="noopener noreferrer">
         <div className="container">
-            <h1>{props.name}.
+            <h2>{props.name}.
             <i class={props.iconn}></i>
-            </h1>
+            </h2>
         </div>
         </a>
     );

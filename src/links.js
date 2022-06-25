@@ -1,10 +1,8 @@
-import React from "react";
-
 const links = [
 
 {
     id:"1",
-    name: "Porfolio Site",
+    name: "Visit my portfolio site",
     url:"https://mighty-taiga-79136.herokuapp.com/",
     iconn: "fas fa-globe-africa"
     
@@ -12,7 +10,7 @@ const links = [
 
 {
     id:"2",
-    name: "Twitter",
+    name: "Let's chat on twitter",
     url:"https://twitter.com/tmaty_",
     iconn: "fab fa-twitter"
     
@@ -20,14 +18,14 @@ const links = [
 
 {
     id:"3",
-    name: "Linkedin",
-    url:"https://twitter.com/tmaty_",
+    name: "View career updates",
+    url:"https://www.linkedin.com/in/thato-matabane-7185381ba",
     iconn: "fab fa-linkedin"
 },
 
 {
     id:"4",
-    name: "GitHub",
+    name: "Check out this lintree's code",
     url:"https://github.com/tmatabane/linktree/tree/master",
     iconn: "fab fa-github"
 }

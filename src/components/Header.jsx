@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css"
 function Header() {
-    return(<header><h1 className="heading">Linktree</h1></header>);
+    return(<div><p>Time</p><header><h1 className="heading">Morning an Aspring Software Engineer's Linktree</h1></header></div>);
 }
 
 export default Header;
