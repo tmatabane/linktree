@@ -52,6 +52,7 @@ if (hrs < 12) {
 
 
 document.body.style.backgroundColor = customTheme.theme;
+
 const themeInfo = {
     currentTime: time,
     periodOfDay: greeting,
