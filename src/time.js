@@ -58,7 +58,9 @@ if (hrs < 12) {
 document.body.style.backgroundColor = customTheme.theme;
 
 const themeInfo = {
-    currentTime: currentTime.toLocaleTimeString().substring(0, 9),
+    // currentTime: currentTime.toLocaleTimeString().substring(0, 9),
+    
+    currentTime: currentTime.toLocaleTimeString('en-US', {hour12: false }),
     periodOfDay: greeting,
     themeColor: headerColor,
     textColor: linkColor,
