@@ -1,37 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import links from "../links";
 import Cards from "./Cards";
 import Header from "./Header";
 import Footer from "./Footer";
-import themeInfo, {linkColor} from "../time";
+import handleTime from "../time";
 import "./css/styles.css";
 
-
-
-function createCard(links) {
-    return (<Cards
-        id={links.id}
-        name={links.name}
-        url={links.url}
-        iconn={links.iconn}
-        textTheme = {linkColor}
-        container={themeInfo.containerTheme}
-    />);
-
-}
-
-
 function App() {
+
+    let currentTyme = new Date();
+
+    setInterval(getCurrentTime, 1000);
+
+    const [tyme, setTime] = useState(currentTyme);
+
+    function getCurrentTime() {
+        currentTyme = new Date();
+        setTime(currentTyme);
+    }
+
+    // deconstruction the values returned from time.js function handleTime()
+    const { currentTime, periodOfDay, themeColor,
+        containerTheme, textColor } = handleTime(tyme);
+
     return (
         <div>
             <Header
-                time = {themeInfo.currentTime}
-                greeting = {themeInfo.periodOfDay}
-                headerColor = {themeInfo.themeColor}
 
-            />
+                time={currentTime}
+                greeting={periodOfDay}
+                headerColor={themeColor}
 
-            {links.map(createCard)}
+                />
+
+            {links.map((links) => {
+                return (<Cards
+                    id={links.id}
+                    name={links.name}
+                    url={links.url}
+                    iconn={links.iconn}
+                    textTheme={textColor}
+                    container={containerTheme}
+                />);
+
+            })}
 
             <Footer />
         </div>

@@ -1,22 +1,26 @@
 import "./components/css/styles.css"
-const currentTime = new Date();
+
+function handleTime(currentTime) {
+    
+
+// let currentTime = new Date();
 
 const hrs = currentTime.getHours();
 
-const min = currentTime.getMinutes();
+// const min = currentTime.getMinutes();
 
-let time = "";
+// let time = "";
 
-if (min < 10) {
+// if (min < 10) {
 
-    time = hrs + ":0" + min + "";
+//     time = hrs + ":0" + min + "";
 
-}
-else {
+// }
+// else {
 
-    time = hrs + ":" + min + "";
+//     time = hrs + ":" + min + "";
 
-}
+// }
 let greeting = "";
 let headerColor = "";
 let container = "";
@@ -54,11 +58,15 @@ if (hrs < 12) {
 document.body.style.backgroundColor = customTheme.theme;
 
 const themeInfo = {
-    currentTime: time,
+    currentTime: currentTime.toLocaleTimeString().substring(0, 9),
     periodOfDay: greeting,
     themeColor: headerColor,
+    textColor: linkColor,
     containerTheme: container
 }
 
-export default themeInfo;
-export { linkColor };
+return themeInfo;
+
+}
+
+export default handleTime;
