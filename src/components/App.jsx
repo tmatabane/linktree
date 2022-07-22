@@ -19,7 +19,7 @@ function App() {
         setTime(currentTyme);
     }
 
-    // deconstruction the values returned from time.js function handleTime()
+    // deconstructing the values returned from time.js function handleTime()
     const { currentTime, periodOfDay, themeColor,
         containerTheme, textColor } = handleTime(tyme);
 

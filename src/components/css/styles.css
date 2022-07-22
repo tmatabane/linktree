@@ -25,7 +25,7 @@ footer p {
 }
 
 header {
-    margin: auto -16px;
+    margin: auto;
     padding: 16px 34px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
@@ -39,7 +39,7 @@ header h1 {
 #sastTime {
     color: #fff;
     font-family: 'Edu VIC WA NT Beginner', cursive;
-    width: 100vw;
+    width: 10rem;
 }
 
 
